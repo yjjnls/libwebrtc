@@ -35,7 +35,7 @@ if (NOT HAS_OWN_DEPOT_TOOLS)
   ExternalProject_Add(
       depot-tools
 
-      GIT_REPOSITORY https://chromium.googlesource.com/chromium/tools/depot_tools
+      GIT_REPOSITORY https://github.com/yjjnls/depot_tools
 
       PREFIX ${CMAKE_BINARY_DIR}/depot_tools
 
@@ -76,7 +76,7 @@ ExternalProject_Add(
     webrtc-src
 
     DEPENDS ${_NEXT_DEPENDS}
-    GIT_REPOSITORY https://chromium.googlesource.com/external/webrtc
+    GIT_REPOSITORY https://github.com/yjjnls/webrtc
 
     PREFIX ${CMAKE_BINARY_DIR}/webrtc
     BINARY_DIR ${CMAKE_BINARY_DIR}/webrtc/build
